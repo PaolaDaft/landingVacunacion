@@ -1,0 +1,10 @@
+:root{
+    --principal:#1f3e72;
+    --secondary:#3959d7;
+    --grayFontcolor:#6d7b93;
+    --backgroundColorBlue:#eaefff;
+}
+
+*{
+    box-sizing: border-box;
+}
