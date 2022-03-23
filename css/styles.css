@@ -1,10 +1,128 @@
-:root{
-    --principal:#1f3e72;
-    --secondary:#3959d7;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap");
+
+:root{ /*Declaracion de colores*/
+    --principal:#3959d7; /*Color logo*/
+    --secondary:#1f3E72;
     --grayFontcolor:#6d7b93;
-    --backgroundColorBlue:#eaefff;
+    --backgroundColorBlueFooter:#EEF3FF;
+    --colordelosTriangulos:#F4F6FB;
 }
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
+  /*margin: 0;
+  padding: 0; ya está en el body*/
+  /*user-select: none;*/
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: "Montserrat";
+  text-decoration: none;
 }
+
+body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/*Para varios */
+.logo-vaccination{
+    color: var(--principal);
+    font-size: 1.6vw;
+    font-weight: bold;
+}
+
+a, p{
+    color:var(--grayFontcolor);
+    font-size: 1.2vw;
+    font-weight: 450;
+}
+
+img{
+    width: 50%;  
+    background: linear-gradient(to right,#0A96E5, #3462DA);  /*tambien podemos agregar to bottom right*/
+    /*width: 800px;
+    height: 1000px; Segun la chica del radiente*/
+    /*transform: rotate(-90deg);
+    margin-left: 925px;
+    margin-top: -500px;*/
+    /*z-index: -1;*/
+}
+
+.button__one button{
+    color:white;
+    border-radius: 6px;  
+    background-color: var(--principal);
+    padding: 10px 16px;  
+
+}
+
+/*HEADER*/
+.header{
+    padding: 10px 10vw;
+    height: 100px;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    position:fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.header__nav {
+    width: 67%;
+}
+
+.header__menu{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+/*Footer*/
+h3 {
+    color: var(--secondary);
+}
+
+footer {
+    background-color: var(--backgroundColorBlueFooter);
+    padding: 50px 10vw;
+    width: 100%;
+}
+
+.footer__links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4em;
+}
+
+.footer__links__sections {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__links ul {
+    padding: 0;
+}
+
+.footer__links li{
+    padding-bottom: 20px;
+}    
+
+.footer__goal{
+    margin-right: 10%;
+    line-height: 1.5em;
+}
+
+.footer__legal {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
